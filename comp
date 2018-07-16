@@ -1,0 +1,4 @@
+nasm -felf64 gugustin.s
+ld gugustin.o -o gugustin -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2
+./gugustin
+
